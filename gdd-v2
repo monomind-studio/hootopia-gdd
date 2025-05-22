@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hootopia: Strategic Adjustments & Market Insights</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- 
+        Infographic Plan Summary:
+        1.  Introduction: Overview of Hootopia's strategic shift.
+        2.  NFT & Item Strategy: Clarify Hootie cards (In-game vs. NFT), Season Passes.
+        3.  League System Deep Dive: Entry and Premium league structure, requirements, and reward pools.
+        4.  Enhanced Collection (Dogam) System: Detail new collection types, targets, and rewards.
+        5.  Ranking & Leaderboards: Showcase various ranking systems and their incentives.
+        6.  Monetization & Engagement: Season Pass NFT sales projections, Roulette feature.
+        7.  Gameplay & UI Focus: Highlight simplification and accessibility improvements.
+        8.  Conclusion: Summary of the new direction's potential.
+
+        Color Palette Chosen: "Energetic & Playful"
+        - Background: #FFF9F0 (Very Light Cream)
+        - Main Text: #4A4A4A (Dark Gray)
+        - Headings: #2D3748 (Dark Slate Gray)
+        - Primary Accent: #FF6B6B (Coral Red)
+        - Secondary Accent 1: #4ECDC4 (Turquoise)
+        - Secondary Accent 2: #FED766 (Mustard Yellow)
+        - Tertiary Accent: #54A0FF (Bright Blue)
+        Chart Colors: ['#FF6B6B', '#4ECDC4', '#FED766', '#54A0FF', '#FF9A8B', '#78E0DC']
+
+        Visualization Choices Summary (Confirming NO SVG, NO MERMAID JS):
+        - NFT Strategy: HTML/Tailwind styled lists/cards. Goal: Inform. Method: Structured HTML.
+        - League System Overview: HTML/Tailwind flow diagram elements. Goal: Organize. Method: Structured HTML.
+        - League Reward Splits: Chart.js Donut Charts. Goal: Compare. Method: Chart.js (Canvas).
+        - Collection System: HTML/Tailwind Table. Goal: Organize/Inform. Method: Structured HTML.
+        - Ranking System: HTML/Tailwind Table. Goal: Organize/Inform. Method: Structured HTML.
+        - Season Pass Details: HTML/Tailwind Table. Goal: Inform/Compare. Method: Structured HTML.
+        - Roulette Rewards: HTML/Tailwind List. Goal: Inform. Method: Structured HTML.
+
+        Confirmation: NEITHER Mermaid JS NOR SVG were used anywhere in this output. All diagrams are HTML/CSS based. All charts are Chart.js (Canvas).
+    -->
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #FFF9F0;
+            color: #4A4A4A;
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 450px; /* Adjusted for potentially smaller donut charts */
+            margin-left: auto;
+            margin-right: auto;
+            height: 300px; 
+            max-height: 350px;
+        }
+        @media (min-width: 768px) {
+            .chart-container {
+                height: 350px;
+                max-height: 400px;
+            }
+        }
+        .stat-card {
+            background-color: #FFFFFF;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .table-wrapper {
+            overflow-x: auto;
+        }
+        th, td {
+            padding: 0.75rem;
+            text-align: left;
+            border-bottom: 1px solid #E2E8F0;
+        }
+        th {
+            background-color: #F8F9FA;
+            color: #2D3748;
+            font-weight: 600;
+        }
+        .flow-step {
+            background-color: #FFFFFF;
+            border: 2px solid #4ECDC4;
+            color: #2D3748;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        .flow-arrow {
+            font-size: 2rem;
+            color: #4ECDC4;
+            margin: 0.5rem 0;
+            text-align: center;
+        }
+        .accent-text-coral { color: #FF6B6B; }
+        .accent-text-turquoise { color: #4ECDC4; }
+        .accent-text-yellow { color: #FED766; }
+        .accent-text-blue { color: #54A0FF; }
+
+        .bg-accent-coral { background-color: #FF6B6B; }
+        .bg-accent-turquoise { background-color: #4ECDC4; }
+        .bg-accent-yellow { background-color: #FED766; }
+        .bg-accent-blue { background-color: #54A0FF; }
+    </style>
+</head>
+<body class="antialiased">
+    <div class="container mx-auto p-4 md:p-8">
+
+        <header class="text-center mb-12">
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">Hootopia: Strategic Evolution</h1>
+            <p class="text-xl text-gray-600">A Deep Dive into Market-Driven Adjustments and Enhanced Player Experience</p>
+        </header>
+
+        <section id="nft-strategy" class="mb-12">
+            <div class="stat-card">
+                <h2 class="text-2xl font-bold text-gray-800 mb-6 text-center border-b pb-3">NFT & In-Game Item Realignment</h2>
+                <p class="text-gray-700 mb-6 text-center">Hootopia is refining its digital asset strategy to enhance clarity and value. The core adjustment distinguishes between readily accessible in-game items and exclusive, tradable NFTs, aiming to create a more sustainable and engaging economy.</p>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <h3 class="text-xl font-semibold mb-3 accent-text-coral">Hootie Cards: Primarily In-Game</h3>
+                        <ul class="list-disc list-inside text-gray-700 space-y-2">
+                            <li>Majority of Hootie cards will function as collectible <strong class="font-semibold">in-game items</strong>.</li>
+                            <li>Focus on collection for game progression and completing "Collection (Dogam)" sets.</li>
+                            <li>The broad "Mystique Hooties NFT Collection" concept is <strong class="font-semibold">discontinued</strong>.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-3 accent-text-turquoise">Limited Edition NFTs: True Collectibles</h3>
+                        <ul class="list-disc list-inside text-gray-700 space-y-2">
+                            <li><strong class="font-semibold">Master, Mythic, and Cosmic Hooties</strong> will be issued as quantity-limited NFTs.</li>
+                            <li>Acquired as rewards or through direct sales, not by general player minting.</li>
+                            <li>Provide Collector Score Boosts:
+                                <ul class="list-disc list-inside ml-4">
+                                    <li>Mythic Hooties: <strong class="font-semibold">+1%</strong> per NFT</li>
+                                    <li>Cosmic Hooties: <strong class="font-semibold">+2%</strong> per NFT</li>
+                                </ul>
+                            </li>
+                            <li>NFTs automatically distributed via Dapp Portal (no user minting).</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="season-pass" class="mb-12">
+            <div class="stat-card">
+                <h2 class="text-2xl font-bold text-gray-800 mb-6 text-center border-b pb-3">Introducing: HootKeeper Season Pass NFTs</h2>
+                <p class="text-gray-700 mb-6 text-center">The HootKeeper NFT concept evolves into HootKeeper Season Passes. These passes are key to accessing exclusive content and represent a significant new monetization and engagement vector.</p>
+                <div class="bg-gray-50 p-4 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-3 accent-text-blue">Season Pass NFT Benefits:</h3>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2">
+                        <li>Grant access to <strong class="font-semibold">Premium Leagues</strong> for the season.</li>
+                        <li>Include bundled bonus items upon purchase (e.g., Card Packs, Magic Powder, Feathers).</li>
+                        <li>Tradable on secondary marketplaces, adding player-driven value.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="league-system" class="mb-12">
+            <div class="stat-card">
+                <h2 class="text-2xl font-bold text-gray-800 mb-6 text-center border-b pb-3">Competitive Edge: The New League System</h2>
+                <p class="text-gray-700 mb-6 text-center">A tiered league system is introduced to foster competition and provide recurring goals for players, with substantial rewards for top performers.</p>
+                
+                <div class="grid md:grid-cols-2 gap-8 items-start">
+                    <div>
+                        <h3 class="text-xl font-semibold mb-4 text-center accent-text-coral">Entry Leagues</h3>
+                        <div class="flow-step mb-2">
+                            <p class="font-semibold">Requirement:</p>
+                            <p>SteelWing or StormWing HootKeeper Subscription</p>
+                        </div>
+                        <div class="flow-arrow">▼</div>
+                        <div class="flow-step">
+                            <p class="font-semibold">Reward Pool:</p>
+                            <p>30% of previous month's subscription revenue (USDT & Hootz)</p>
+                        </div>
+                         <p class="text-sm text-gray-600 mt-4 text-center">Rewards distributed to the Top 20 players monthly.</p>
+                        <div class="chart-container mt-6 mx-auto">
+                            <canvas id="entryLeagueChart"></canvas>
+                        </div>
+                        <p class="text-sm text-gray-600 mt-2 text-center">Illustrative reward distribution for Top 20.</p>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-4 text-center accent-text-turquoise">Premium Leagues</h3>
+                         <div class="flow-step mb-2">
+                            <p class="font-semibold">Requirement:</p>
+                            <p>Hold relevant HootKeeper Season Pass NFT</p>
+                        </div>
+                        <div class="flow-arrow">▼</div>
+                        <div class="flow-step">
+                            <p class="font-semibold">Reward Pool:</p>
+                            <p>50% of Season Pass NFT sales revenue (USDT & Hootz)</p>
+                        </div>
+                        <p class="text-sm text-gray-600 mt-4 text-center">Rewards distributed to the Top 5 players per season.</p>
+                        <div class="chart-container mt-6 mx-auto">
+                            <canvas id="premiumLeagueChart"></canvas>
+                        </div>
+                        <p class="text-sm text-gray-600 mt-2 text-center">Illustrative reward distribution for Top 5.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="collection-system" class="mb-12">
+            <div class="stat-card">
+                <h2 class="text-2xl font-bold text-gray-800 mb-6 text-center border-b pb-3">Enhanced Collection (Dogam) System</h2>
+                <p class="text-gray-700 mb-6 text-center">The collection system is significantly upgraded to cater to different player segments with diverse challenges and rewards, forming a core engagement loop.</p>
+                <div class="table-wrapper">
+                    <table class="min-w-full bg-white">
+                        <thead>
+                            <tr>
+                                <th>Target Player</th>
+                                <th>Collection (Dogam) Type</th>
+                                <th>Target Cards</th>
+                                <th>Collection Method</th>
+                                <th>Rewards</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>New / Lower-tier Users</td>
+                                <td>Wild Hooties Dogam (Infinite Loop)</td>
+                                <td>Common, Uncommon</td>
+                                <td>Collect, cards consumed on reward receipt</td>
+                                <td>HTP (e.g., 50-200 HTP). Optional ad view for bonus HTP. No score.</td>
+                            </tr>
+                            <tr>
+                                <td>Mid-tier / General Users</td>
+                                <td>Attribute Dogam (e.g., Fire, Water)</td>
+                                <td>Warrior tier & above</td>
+                                <td>Player actively adds to collection, 4 difficulties per attribute.</td>
+                                <td>HTP (e.g., 500-1200 HTP), User Badges. Master Hooties NFT for highest difficulty. Optional ad view for bonus HTP.</td>
+                            </tr>
+                            <tr>
+                                <td>High-tier / Core Users / Event Participants</td>
+                                <td>Legendary Dogam / Event Dogam</td>
+                                <td>Warrior tier & above (complex conditions)</td>
+                                <td>Player actively adds to collection.</td>
+                                <td>HTP, IAP Items, Hootz, Mythic/Cosmic NFTs. Event-specific: USDT. Optional ad view for bonus HTP.</td>
+                            </tr>
+                            <tr>
+                                <td>Season Pass Holders</td>
+                                <td>League Collection</td>
+                                <td>Warrior tier & above (complex conditions)</td>
+                                <td>Player actively adds to collection.</td>
+                                <td>USDT, Hootz Airdrop.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section id="ranking-system" class="mb-12">
+            <div class="stat-card">
+                <h2 class="text-2xl font-bold text-gray-800 mb-6 text-center border-b pb-3">Revamped Ranking & Leaderboards</h2>
+                <p class="text-gray-700 mb-6 text-center">Multiple ranking categories will drive competition and reward consistent engagement across different player activities.</p>
+                <div class="table-wrapper">
+                    <table class="min-w-full bg-white">
+                        <thead>
+                            <tr>
+                                <th>Target Player</th>
+                                <th>Ranking Type</th>
+                                <th>Period</th>
+                                <th>Rewards / Reward Pool</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>All Users</td>
+                                <td>Friend Invitation Ranking</td>
+                                <td>Weekly</td>
+                                <td>Hootz Airdrop for Top 10</td>
+                            </tr>
+                            <tr>
+                                <td>All Users</td>
+                                <td>Score Ranking / Overall Ranking</td>
+                                <td>All Time</td>
+                                <td>Hootz Airdrop (1-time at TGE)</td>
+                            </tr>
+                            <tr>
+                                <td>Mid & High-tier / Event Participants</td>
+                                <td>Score Ranking / Event Dogam Ranking</td>
+                                <td>Event-limited</td>
+                                <td>USDT, Hootz Airdrop & more (Event: $500-$1000 USD pool)</td>
+                            </tr>
+                            <tr>
+                                <td>SteelWing Subscribers</td>
+                                <td>SteelWing League / Overall Ranking</td>
+                                <td>Monthly</td>
+                                <td>30% of prev. month's sub revenue (USDT, Hootz)</td>
+                            </tr>
+                            <tr>
+                                <td>StormWing Subscribers</td>
+                                <td>StormWing League / Overall Ranking</td>
+                                <td>Monthly</td>
+                                <td>30% of prev. month's sub revenue (USDT, Hootz)</td>
+                            </tr>
+                             <tr>
+                                <td>Season Pass NFT Holders</td>
+                                <td>Mystic League / League-specific Ranking</td>
+                                <td>Season-limited</td>
+                                <td>50% of season ticket NFT sales (USDT, Hootz)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section id="season-pass-potential" class="mb-12">
+            <div class="stat-card">
+                <h2 class="text-2xl font-bold text-gray-800 mb-6 text-center border-b pb-3">Season Pass NFTs: Market Potential & Structure</h2>
+                <p class="text-gray-700 mb-6 text-center">The HootKeeper Season Pass NFTs are designed with varying tiers, quantities, and price points, creating diverse investment and participation opportunities, directly fueling premium league reward pools.</p>
+                <div class="table-wrapper">
+                    <table class="min-w-full bg-white text-sm">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>HootKeeper Name</th>
+                                <th>League Name</th>
+                                <th>Price (USD)</th>
+                                <th>Qty</th>
+                                <th>Max Sales (USD)</th>
+                                <th>Reward Pool (USD)</th>
+                                <th>1st Place (USD)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>1</td><td>Golden Glory</td><td>Glory League</td><td>$10</td><td>5,000</td><td>$50,000</td><td>$25,000 (50%)</td><td>$10,000 (40%)</td></tr>
+                            <tr><td>2</td><td>Silver Sentinel</td><td>Sentinel League</td><td>$20</td><td>4,000</td><td>$80,000</td><td>$40,000 (50%)</td><td>$16,000 (40%)</td></tr>
+                            <tr><td>3</td><td>Bronze Blaze</td><td>Blaze League</td><td>$40</td><td>3,000</td><td>$120,000</td><td>$60,000 (50%)</td><td>$24,000 (40%)</td></tr>
+                            <tr><td>4</td><td>Emerald Enchanter</td><td>Enchanter League</td><td>$60</td><td>2,500</td><td>$150,000</td><td>$75,000 (50%)</td><td>$30,000 (40%)</td></tr>
+                            <tr><td>5</td><td>Sapphire Seer</td><td>Seer League</td><td>$90</td><td>2,000</td><td>$180,000</td><td>$90,000 (50%)</td><td>$36,000 (40%)</td></tr>
+                            <tr><td>6</td><td>Ruby Revenant</td><td>Revenant League</td><td>$130</td><td>1,500</td><td>$195,000</td><td>$97,500 (50%)</td><td>$39,000 (40%)</td></tr>
+                            <tr><td>7</td><td>Obsidian Oracle</td><td>Oracle League</td><td>$180</td><td>1,200</td><td>$216,000</td><td>$108,000 (50%)</td><td>$43,200 (40%)</td></tr>
+                            <tr><td>8</td><td>Amethyst Ascendant</td><td>Ascendant League</td><td>$250</td><td>1,000</td><td>$250,000</td><td>$125,000 (50%)</td><td>$50,000 (40%)</td></tr>
+                            <tr><td>9</td><td>Celestial Crown</td><td>Crown League</td><td>$400</td><td>700</td><td>$280,000</td><td>$140,000 (50%)</td><td>$56,000 (40%)</td></tr>
+                            <tr><td>10</td><td>Ethereal Eclipse</td><td>Eclipse League</td><td>$700</td><td>400</td><td>$280,000</td><td>$140,000 (50%)</td><td>$56,000 (40%)</td></tr>
+                            <tr><td>11</td><td>Prismatic Phoenix</td><td>Phoenix League</td><td>$1200</td><td>300</td><td>$360,000</td><td>$180,000 (50%)</td><td>$72,000 (40%)</td></tr>
+                        </tbody>
+                    </table>
+                     <p class="text-xs text-gray-500 mt-2">Reward pool is 50% of Max Sales. 1st place receives 40% of the reward pool. Other ranks (2nd-5th) receive 25%, 15%, 12%, 8% respectively. Data from proposal.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="roulette" class="mb-12">
+            <div class="stat-card">
+                <h2 class="text-2xl font-bold text-gray-800 mb-6 text-center border-b pb-3">Boosted Engagement: Mystique Lucky Spin</h2>
+                <p class="text-gray-700 mb-6 text-center">A new roulette feature, "Mystique Lucky Spin," is added to enhance daily engagement and provide additional reward opportunities, strengthening the game's monetization loop through ad views and item consumption.</p>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <h3 class="text-xl font-semibold mb-3 accent-text-yellow">Spin Opportunities:</h3>
+                        <ul class="list-disc list-inside text-gray-700 space-y-2">
+                            <li><strong class="font-semibold">Free Spin:</strong> 1 per day.</li>
+                            <li><strong class="font-semibold">Mystique Feather / Ad View Spin:</strong> Up to 2 additional per day.</li>
+                            <li><strong class="font-semibold">Bonus Spin:</strong> 1 for achieving 5 friend additions (milestone).</li>
+                        </ul>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <h3 class="text-xl font-semibold mb-3 accent-text-blue">Potential Rewards (Daily Random Change):</h3>
+                        <ul class="list-disc list-inside text-gray-700 space-y-2">
+                            <li>Magic Powder</li>
+                            <li>100 HTP</li>
+                            <li>500 HTP</li>
+                            <li>Card Pack</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="gameplay-ui" class="mb-12">
+            <div class="stat-card">
+                <h2 class="text-2xl font-bold text-gray-800 mb-6 text-center border-b pb-3">Focus on Fun: Simplified Gameplay & UI</h2>
+                 <p class="text-gray-700 mb-6 text-center">To broaden appeal and improve player experience, Hootopia will simplify core gameplay mechanics and enhance UI/UX clarity.</p>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <h3 class="text-xl font-semibold mb-3 accent-text-coral">Key Gameplay Changes:</h3>
+                        <ul class="list-disc list-inside text-gray-700 space-y-2">
+                            <li>Removal of Hootie Stat Enhancement (Expedition feature).</li>
+                            <li>Focus on collection and strategic use of Hooties in leagues rather than individual stat grinding.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-3 accent-text-turquoise">UI/UX Improvements:</h3>
+                        <ul class="list-disc list-inside text-gray-700 space-y-2">
+                            <li>Reduce text, simplify user flows.</li>
+                            <li>Enhance accessibility to League, Collection (Dogam), and Leaderboard sections.</li>
+                            <li>Clearer messaging for rewards.</li>
+                            <li>Intuitive UI for Collection (Dogam) management.</li>
+                            <li>Enhanced in-game animations (HootKeeper idle, MysticStone/Hootie appearance, reward acquisition, collection completion, ranking entry).</li>
+                            <li>Nomenclature change: "Hooties" (plural) to "Hootie" (singular), with "Hooties" for plural usage.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="text-center mt-12 py-8 border-t">
+            <p class="text-gray-600">&copy; Hootopia Strategic Insights. Data based on "Hootopia 기획 조정안".</p>
+        </footer>
+
+    </div>
+
+    <script>
+        const chartColors = ['#FF6B6B', '#4ECDC4', '#FED766', '#54A0FF', '#FF9A8B', '#78E0DC', '#B798F5', '#FFC53A', '#4DD091', '#6B7AFF'];
+
+        function processLabels(originalLabels) {
+            return originalLabels.map(label => {
+                if (label.length > 16) {
+                    const words = label.split(' ');
+                    const newLabel = [];
+                    let currentLine = '';
+                    words.forEach(word => {
+                        if ((currentLine + word).length > 16) {
+                            newLabel.push(currentLine.trim());
+                            currentLine = word + ' ';
+                        } else {
+                            currentLine += word + ' ';
+                        }
+                    });
+                    newLabel.push(currentLine.trim());
+                    return newLabel;
+                }
+                return label;
+            });
+        }
+        
+        const tooltipTitleCallback = (tooltipItems) => {
+            const item = tooltipItems[0];
+            let label = item.chart.data.labels[item.dataIndex];
+            if (Array.isArray(label)) {
+                return label.join(' ');
+            }
+            return label;
+        };
+
+        // Entry League Chart (Illustrative Top 20 Distribution)
+        const entryLeagueData = {
+            labels: processLabels(['Rank 1 (15%)', 'Rank 2-3 (20%)', 'Rank 4-5 (16%)', 'Rank 6-10 (25%)', 'Rank 11-20 (24%)']),
+            datasets: [{
+                label: 'Reward Distribution',
+                data: [15, 20, 16, 25, 24], // Percentages
+                backgroundColor: chartColors.slice(0, 5),
+                hoverOffset: 4
+            }]
+        };
+        new Chart(document.getElementById('entryLeagueChart'), {
+            type: 'doughnut',
+            data: entryLeagueData,
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: { position: 'bottom' },
+                    title: { display: true, text: 'Entry League: Top 20 Reward %' },
+                    tooltip: { callbacks: { title: tooltipTitleCallback } }
+                }
+            }
+        });
+
+        // Premium League Chart (Illustrative Top 5 Distribution)
+        const premiumLeagueData = {
+            labels: processLabels(['Rank 1 (40%)', 'Rank 2 (25%)', 'Rank 3 (15%)', 'Rank 4 (12%)', 'Rank 5 (8%)']),
+            datasets: [{
+                label: 'Reward Distribution',
+                data: [40, 25, 15, 12, 8], // Percentages
+                backgroundColor: chartColors.slice(0, 5),
+                hoverOffset: 4
+            }]
+        };
+        new Chart(document.getElementById('premiumLeagueChart'), {
+            type: 'doughnut',
+            data: premiumLeagueData,
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: { position: 'bottom' },
+                    title: { display: true, text: 'Premium League: Top 5 Reward %' },
+                    tooltip: { callbacks: { title: tooltipTitleCallback } }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
