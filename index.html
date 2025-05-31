@@ -122,24 +122,24 @@
                     <div>
                         <h3 class="text-xl font-semibold mb-3 accent-text-coral">Hootie Cards: Primarily In-Game</h3>
                         <ul class="list-disc list-inside text-gray-700 space-y-2">
-                            <li>Majority of Hootie cards will function as collectible <strong class="font-semibold">in-game items</strong>.</li>
+                            <li>All standard Hootie cards will function as collectible <strong class="font-semibold">in-game items</strong>, not NFTs.</li>
+                            <li>The previously envisioned "Mystique Hooties NFT Collection" is <strong class="font-semibold">canceled</strong>.</li>
                             <li>Focus on collection for game progression and completing "Collection (Codex)" sets.</li>
-                            <li>The broad "Mystique Hooties NFT Collection" concept is <strong class="font-semibold">discontinued</strong>.</li>
                         </ul>
                     </div>
                     <div>
                         <h3 class="text-xl font-semibold mb-3 accent-text-turquoise">Limited Edition NFTs: True Collectibles</h3>
                         <ul class="list-disc list-inside text-gray-700 space-y-2">
                             <li><strong class="font-semibold">Master, Mythic, and Cosmic Hooties</strong> will be issued as quantity-limited NFTs.</li>
-                            <li>Acquired as rewards or through direct sales, not by general player minting.</li>
-                            <li>Provide Collector Score Boosts:
+                            <li>Acquired as high-value rewards (e.g., for Legendary Codex completion) or through direct sales.</li>
+                            <li>These NFTs are <strong class="font-semibold">not user-mintable</strong> and are automatically distributed via a Dapp Portal.</li>
+                            <li>Provide permanent Collector Score Boosts:
                                 <ul class="list-disc list-inside ml-4">
-                                    <li>Master Hooties: <strong class="font-semibold">+1%</strong> per NFT</li>
-                                    <li>Mythic Hooties: <strong class="font-semibold">+1%</strong> per NFT</li>
-                                    <li>Cosmic Hooties: <strong class="font-semibold">+2%</strong> per NFT</li>
+                                    <li>Master Hooties: <strong class="font-semibold">+1%</strong> to Collector Score per Hootie</li>
+                                    <li>Mythic Hooties: <strong class="font-semibold">+1%</strong> to Collector Score per Hootie</li>
+                                    <li>Cosmic Hooties: <strong class="font-semibold">+2%</strong> to Collector Score per Hootie</li>
                                 </ul>
                             </li>
-                            <li>NFTs automatically distributed via Dapp Portal (no user minting).</li>
                         </ul>
                     </div>
                 </div>
@@ -153,9 +153,10 @@
                 <div class="bg-gray-50 p-4 rounded-lg">
                     <h3 class="text-xl font-semibold mb-3 accent-text-blue">Season Pass NFT Benefits:</h3>
                     <ul class="list-disc list-inside text-gray-700 space-y-2">
-                        <li>Grant access to <strong class="font-semibold">Premium Leagues</strong> for the season.</li>
-                        <li>Include bundled bonus items upon purchase (e.g., Card Packs, Magic Powder, Feathers).</li>
-                        <li>Tradable on secondary marketplaces, adding player-driven value.</li>
+                        <li>HootKeeper NFTs are transformed into "HootKeeper Season Pass NFTs."</li>
+                        <li>Purchasing a Season Pass NFT grants access to <strong class="font-semibold">Premium Leagues</strong> for the specific season.</li>
+                        <li>Includes a bundle of valuable in-game items upon purchase (e.g., Card Packs, Magic Powder, Feathers).</li>
+                        <li>SteelWing and StormWing HootKeepers will expire in 30 days and grant a Season Pass for the upcoming Entry League's monthly seasons.</li>
                     </ul>
                 </div>
             </div>
@@ -168,15 +169,15 @@
                 
                 <div class="grid md:grid-cols-2 gap-8 items-start">
                     <div>
-                        <h3 class="text-xl font-semibold mb-4 text-center accent-text-coral">Entry Leagues</h3>
+                        <h3 class="text-xl font-semibold mb-4 text-center accent-text-coral">Entry Leagues (SteelWing & StormWing)</h3>
                         <div class="flow-step mb-2">
                             <p class="font-semibold">Requirement:</p>
-                            <p>SteelWing or StormWing HootKeeper Subscription</p>
+                            <p>SteelWing or StormWing HootKeeper Subscription (30-day pass)</p>
                         </div>
                         <div class="flow-arrow">▼</div>
                         <div class="flow-step">
                             <p class="font-semibold">Reward Pool:</p>
-                            <p>30% of previous month's subscription revenue (USDT & Hootz)</p>
+                            <p>30% of previous month's subscription revenue (USDT)</p>
                         </div>
                          <p class="text-sm text-gray-600 mt-4 text-center">Rewards distributed to the Top 20 players monthly.</p>
                         <div class="chart-container mt-6 mx-auto">
@@ -193,9 +194,9 @@
                         <div class="flow-arrow">▼</div>
                         <div class="flow-step">
                             <p class="font-semibold">Reward Pool:</p>
-                            <p>50% of Season Pass NFT sales revenue (USDT & Hootz)</p>
+                            <p>50% of Season Pass NFT sales revenue (USDT)</p>
                         </div>
-                        <p class="text-sm text-gray-600 mt-4 text-center">Rewards distributed to the Top 5 players per season.</p>
+                        <p class="text-sm text-gray-600 mt-4 text-center">Rewards distributed to the Top 5 players per season (Quarterly).</p>
                         <div class="chart-container mt-6 mx-auto">
                             <canvas id="premiumLeagueChart"></canvas>
                         </div>
@@ -213,41 +214,42 @@
                     <table class="min-w-full bg-white">
                         <thead>
                             <tr>
+                                <th>Codex Type</th>
                                 <th>Target Player</th>
-                                <th>Collection (Codex) Type</th>
-                                <th>Target Cards</th>
-                                <th>Collection Method</th>
-                                <th>Rewards</th>
+                                <th>Mechanic / Conditions</th>
+                                <th>Key Rewards</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td>New / Lower-tier Users</td>
-                                <td>Wild Hooties Codex (Infinite Loop)</td>
-                                <td>Common, Uncommon</td>
-                                <td>Collect, cards consumed on reward receipt</td>
-                                <td>HTP (e.g., 50-200 HTP). Optional ad view for bonus HTP. No score.</td>
+                                <td><strong>Wild Hooties Codex</strong></td>
+                                <td>New / Low-tier Users</td>
+                                <td>Infinite repeatable loop; cards burned upon collection completion to claim rewards.</td>
+                                <td>HTP (50-200 HTP), Bingo Cards. Optional ad view for bonus HTP. No Collector Score.</td>
                             </tr>
                             <tr>
-                                <td>Mid-tier / General Users</td>
-                                <td>Attribute Codex (e.g., Fire, Water)</td>
-                                <td>Warrior tier & above</td>
-                                <td>Player actively adds to collection, 4 difficulties per attribute.</td>
-                                <td>HTP (e.g., 500-1200 HTP), User Badges. Master Hooties NFT for highest difficulty. Optional ad view for bonus HTP.</td>
+                                <td><strong>Element Codex (Warrior Hooties)</strong></td>
+                                <td>Intermediate / General Users</td>
+                                <td>Collect Warrior-type Hooties based on elements. Players manually add cards. 4 difficulty levels per attribute.</td>
+                                <td>HTP (500-1200 HTP), temporary Wing access (Steel Wing, Storm Wing), Master Boost NFT for highest difficulty. Optional ad view for bonus HTP.</td>
                             </tr>
                             <tr>
-                                <td>High-tier / Core Users / Event Participants</td>
-                                <td>Legendary Codex / Event Codex</td>
-                                <td>Warrior tier & above (complex conditions)</td>
-                                <td>Player actively adds to collection.</td>
-                                <td>HTP, IAP Items, Hootz, Mythic/Cosmic NFTs. Event-specific: USDT. Optional ad view for bonus HTP.</td>
+                                <td><strong>Legendary Codex (Rare Hooties)</strong></td>
+                                <td>Advanced / Core Users</td>
+                                <td>Collect Warrior-type Hooties based on complex conditions (attribute, tier, class). Players manually add cards.</td>
+                                <td>HTP, IAP items, Hootz, Mythic Hootie NFTs, Cosmic Hootie NFTs. Optional ad view for bonus HTP.</td>
                             </tr>
                             <tr>
-                                <td>Season Pass Holders</td>
-                                <td>League Collection</td>
-                                <td>Warrior tier & above (complex conditions)</td>
-                                <td>Player actively adds to collection.</td>
-                                <td>USDT, Hootz Airdrop.</td>
+                                <td><strong>Event Codex</strong></td>
+                                <td>Intermediate / Advanced Users (Event-Dependent)</td>
+                                <td>Collect specific Warrior-type Hooties based on event themes/conditions. Players manually add cards. Rewards and duration vary by event.</td>
+                                <td>HTP, IAP items, Hootz, Limited-Edition Hootie NFTs, USDT. Optional ad view for bonus HTP.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>League Codex (Entry & Premium)</strong></td>
+                                <td>Advanced / Core Users (Season Pass Holders)</td>
+                                <td>Collect specific Warrior-type Hooties relevant to league play. Players manually add cards. Infinite slots.</td>
+                                <td>No completion reward. Leaderboard Rewards: USDT, Hootz Airdrops (based on league reward pools).</td>
                             </tr>
                         </tbody>
                     </table>
@@ -263,48 +265,42 @@
                     <table class="min-w-full bg-white">
                         <thead>
                             <tr>
-                                <th>Target Player</th>
                                 <th>Ranking Type</th>
+                                <th>Target Players</th>
                                 <th>Period</th>
                                 <th>Rewards / Reward Pool</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td>All Users</td>
-                                <td>Friend Invitation Ranking</td>
-                                <td>Weekly</td>
-                                <td>Hootz Airdrop for Top 10</td>
-                            </tr>
-                            <tr>
-                                <td>All Users</td>
-                                <td>Score Ranking / Overall Ranking</td>
+                                <td><strong>Global Leaderboard</strong></td>
+                                <td>All Users (Based on all-time Standard Collector Score)</td>
                                 <td>All Time</td>
-                                <td>Hootz Airdrop (1-time at TGE)</td>
+                                <td>No direct reward.</td>
                             </tr>
                             <tr>
-                                <td>Mid & High-tier / Event Participants</td>
-                                <td>Score Ranking / Event Codex Ranking</td>
+                                <td><strong>Event Leaderboard</strong></td>
+                                <td>Event Codex Participants (Based on Event Collector Score)</td>
                                 <td>Event-limited</td>
-                                <td>USDT, Hootz Airdrop & more (Event: $500-$1000 USD pool)</td>
+                                <td>Event-specific rewards (e.g., USDT, Hootz Airdrop, IAP Items, NFTs).</td>
                             </tr>
                             <tr>
-                                <td>SteelWing Subscribers</td>
-                                <td>SteelWing League / Overall Ranking</td>
-                                <td>Monthly</td>
-                                <td>30% of prev. month's sub revenue (USDT, Hootz)</td>
+                                <td><strong>SteelWing League Leaderboard</strong></td>
+                                <td>SteelWing HootKeeper Owners</td>
+                                <td>Monthly (Each Season lasts 30 days)</td>
+                                <td>USDT distributed to Top 20 users (Reward pool: 30% of Season Pass Sales).</td>
                             </tr>
                             <tr>
-                                <td>StormWing Subscribers</td>
-                                <td>StormWing League / Overall Ranking</td>
-                                <td>Monthly</td>
-                                <td>30% of prev. month's sub revenue (USDT, Hootz)</td>
+                                <td><strong>StormWing League Leaderboard</strong></td>
+                                <td>StormWing HootKeeper Owners</td>
+                                <td>Monthly (Each Season lasts 30 days)</td>
+                                <td>USDT distributed to Top 20 users (Reward pool: 30% of Season Pass Sales).</td>
                             </tr>
                              <tr>
-                                <td>Season Pass NFT Holders</td>
-                                <td>Mystic League / League-specific Ranking</td>
-                                <td>Season-limited</td>
-                                <td>50% of season ticket NFT sales (USDT, Hootz)</td>
+                                <td><strong>Premium League Leaderboard</strong></td>
+                                <td>HootKeeper Season Pass NFT Holders</td>
+                                <td>Quarterly</td>
+                                <td>USDT distributed to Top 5 users (Reward pool: 50% of NFT Sales).</td>
                             </tr>
                         </tbody>
                     </table>
@@ -331,7 +327,7 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr><td>1</td><td>Golden Glory</td><td>Glory League</td><td>$10</td><td>5,000</td><td>$50,000</td><td>$25,000 (50%)</td><td>$10,000 (40%)</td></tr>
+                            <tr><td>1</td><td>Golden Glory</td><td>Glory League</td><td>$15</td><td>5,000</td><td>$50,000</td><td>$25,000 (50%)</td><td>$10,000 (40%)</td></tr>
                             <tr><td>2</td><td>Silver Sentinel</td><td>Sentinel League</td><td>$20</td><td>4,000</td><td>$80,000</td><td>$40,000 (50%)</td><td>$16,000 (40%)</td></tr>
                             <tr><td>3</td><td>Bronze Blaze</td><td>Blaze League</td><td>$40</td><td>3,000</td><td>$120,000</td><td>$60,000 (50%)</td><td>$24,000 (40%)</td></tr>
                             <tr><td>4</td><td>Emerald Enchanter</td><td>Enchanter League</td><td>$60</td><td>2,500</td><td>$150,000</td><td>$75,000 (50%)</td><td>$30,000 (40%)</td></tr>
@@ -352,23 +348,23 @@
         <section id="roulette" class="mb-12">
             <div class="stat-card">
                 <h2 class="text-2xl font-bold text-gray-800 mb-6 text-center border-b pb-3">Boosted Engagement: Mystique Lucky Spin</h2>
-                <p class="text-gray-700 mb-6 text-center">A new roulette feature, "Mystique Lucky Spin," is added to enhance daily engagement and provide additional reward opportunities, strengthening the game's monetization loop through ad views and item consumption.</p>
+                <p class="text-gray-700 mb-6 text-center">A new roulette feature, "Mystique Lucky Spin," is added to enhance daily engagement and provide additional reward opportunities, strengthening the game's monetization loop through item consumption.</p>
                 <div class="grid md:grid-cols-2 gap-6">
                     <div class="bg-gray-50 p-4 rounded-lg">
                         <h3 class="text-xl font-semibold mb-3 accent-text-yellow">Spin Opportunities:</h3>
                         <ul class="list-disc list-inside text-gray-700 space-y-2">
                             <li><strong class="font-semibold">Free Spin:</strong> 1 per day.</li>
-                            <li><strong class="font-semibold">Mystique Feather / Ad View Spin:</strong> Up to 2 additional per day.</li>
-                            <li><strong class="font-semibold">Bonus Spin:</strong> 1 for achieving 5 friend additions (milestone).</li>
+                            <li><strong class="font-semibold">Paid Spins:</strong> Use 2 "Mystique Feathers" for an additional spin, up to 2 times per day.</li>
+                            <li><strong class="font-semibold">Bonus Spin:</strong> 1 spin awarded for achieving 5 friend additions/invitations.</li>
                         </ul>
                     </div>
                     <div class="bg-gray-50 p-4 rounded-lg">
-                        <h3 class="text-xl font-semibold mb-3 accent-text-blue">Potential Rewards (Daily Random Change):</h3>
+                        <h3 class="text-xl font-semibold mb-3 accent-text-blue">Potential Rewards (Daily Rotating Pool):</h3>
                         <ul class="list-disc list-inside text-gray-700 space-y-2">
                             <li>Magic Powder</li>
                             <li>100 HTP</li>
                             <li>500 HTP</li>
-                            <li>Card Pack</li>
+                            <li>Card Packs</li>
                         </ul>
                     </div>
                 </div>
@@ -383,19 +379,24 @@
                     <div>
                         <h3 class="text-xl font-semibold mb-3 accent-text-coral">Key Gameplay Changes:</h3>
                         <ul class="list-disc list-inside text-gray-700 space-y-2">
-                            <li>Removal of Hootie Stat Enhancement (Expedition feature).</li>
-                            <li>Focus on collection and strategic use of Hooties in leagues rather than individual stat grinding.</li>
+                            <li>Removal of the "Expedition" feature for Hootie stat enhancement.</li>
+                            <li>Focus on collection and strategic use of Hooties in leagues.</li>
+                            <li>Nomenclature change: "Hootie" for singular, "Hooties" for plural.</li>
                         </ul>
                     </div>
                     <div>
-                        <h3 class="text-xl font-semibold mb-3 accent-text-turquoise">UI/UX Improvements:</h3>
+                        <h3 class="text-xl font-semibold mb-3 accent-text-turquoise">UI/UX & Animation Improvements:</h3>
                         <ul class="list-disc list-inside text-gray-700 space-y-2">
-                            <li>Reduce text, simplify user flows.</li>
-                            <li>Enhance accessibility to League, Collection (Codex), and Leaderboard sections.</li>
-                            <li>Clearer messaging for rewards.</li>
-                            <li>Intuitive UI for Collection (Codex) management.</li>
-                            <li>Enhanced in-game animations (HootKeeper idle, MysticStone/Hootie appearance, reward acquisition, collection completion, ranking entry).</li>
-                            <li>Nomenclature change: "Hooties" (plural) to "Hootie" (singular), with "Hooties" for plural usage.</li>
+                            <li>Reduced on-screen text and simplified user flows for intuitive navigation.</li>
+                            <li>Redesigned Codex (Collection) UI for better clarity and ease of use.</li>
+                            <li>Enhanced in-game animations, including:
+                                <ul class="list-disc list-inside ml-4">
+                                    <li>HootKeeper idle animations.</li>
+                                    <li>Mystique Stone and Hootie appearance/summoning animations.</li>
+                                    <li>Reward acquisition animations.</li>
+                                    <li>Collection completion animations.</li>
+                                </ul>
+                            </li>
                         </ul>
                     </div>
                 </div>
