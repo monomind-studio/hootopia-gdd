@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hootopia GDD V2 Summary: Strategic Adjustments</title>
+    <title>Summary of Changes to Hootopia: Strategic Adjustments</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
@@ -118,10 +118,9 @@
             <div class="stat-card">
                 <h2 class="text-2xl font-bold text-gray-800 mb-6 text-center border-b pb-3">NFT & In-Game Item Realignment</h2>
                 <p class="text-gray-700 mb-6 text-center">Hootopia is refining its digital asset strategy to enhance clarity and value. The core adjustment distinguishes between readily accessible in-game items and exclusive, tradable NFTs, aiming to create a more sustainable and engaging economy.</p>
-                <div class="grid md:grid-cols-2 gap-6">
-                    <div>
+                <div class="grid gap-6"> <div>
                         <h3 class="text-xl font-semibold mb-3 accent-text-coral">Hootie Cards: Primarily In-Game</h3>
-                        <ul class="list-disc list-inside text-gray-700 space-y-2">
+                        <ul class="list-disc list-inside text-gray-700 space-y-3">
                             <li>All standard Hootie cards will function as collectible <strong class="font-semibold">in-game items</strong>, not NFTs.</li>
                             <li>The previously envisioned "Mystique Hooties NFT Collection" is <strong class="font-semibold">canceled</strong>.</li>
                             <li>Focus on collection for game progression and completing "Collection (Codex)" sets.</li>
@@ -129,16 +128,42 @@
                     </div>
                     <div>
                         <h3 class="text-xl font-semibold mb-3 accent-text-turquoise">Introducing: The Mystique Boost NFT Collection</h3>
-                        <ul class="list-disc list-inside text-gray-700 space-y-2">
+                        <ul class="list-disc list-inside text-gray-700 space-y-3">
                             <li>"The Mystique Hooties NFT Collection" is replaced by <strong class="font-semibold">"The Mystique Boost NFT"</strong> collection.</li>
                             <li>These NFTs are awarded for completing advanced Codex challenges and grant permanent Collector Score boosts.</li>
                             <li>All Mystique Boost NFTs are <strong class="font-semibold">unlimited supply</strong> and automatically distributed via a Dapp Portal (no user minting).</li>
-                            <li>Types of Mystique Boost NFTs and their benefits:
-                                <ul class="list-disc list-inside ml-4">
-                                    <li><strong class="font-semibold">Master Boost:</strong> Awarded for completing 3x6 Warrior Codex, grants <strong class="font-semibold">+1%</strong> Collector Score Boost per NFT.</li>
-                                    <li><strong class="font-semibold">Mythic Boost:</strong> Awarded for completing 3x5 Legendary Codex, grants <strong class="font-semibold">+2%</strong> Collector Score Boost per NFT.</li>
-                                    <li><strong class="font-semibold">Cosmic Boost:</strong> Awarded for completing 3x6 Legendary Codex, grants <strong class="font-semibold">+3%</strong> Collector Score Boost per NFT.</li>
-                                </ul>
+
+                                <div class="bg-gray-100 p-3 rounded-md">
+                                    <p class="font-semibold mt-2 mb-2">Types of Mystique Boost NFTs and their benefits:</p>
+                                    <div class="table-wrapper">
+                                        <table class="min-w-full bg-white rounded-md overflow-hidden">
+                                            <thead>
+                                                <tr class="bg-gray-200">
+                                                    <th class="py-2 px-3 text-left text-sm font-semibold text-gray-700">NFT Type</th>
+                                                    <th class="py-2 px-3 text-left text-sm font-semibold text-gray-700">Awarded For</th>
+                                                    <th class="py-2 px-3 text-left text-sm font-semibold text-gray-700">Collector Score Boost</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr class="border-b border-gray-200">
+                                                    <td class="py-2 px-3 text-sm text-gray-800"><strong class="font-semibold">Master Boost</strong></td>
+                                                    <td class="py-2 px-3 text-sm text-gray-800">Completing 3x6 Warrior Codex</td>
+                                                    <td class="py-2 px-3 text-sm text-gray-800"><strong class="font-semibold">+1%</strong> per NFT</td>
+                                                </tr>
+                                                <tr class="border-b border-gray-200">
+                                                    <td class="py-2 px-3 text-sm text-gray-800"><strong class="font-semibold">Mythic Boost</strong></td>
+                                                    <td class="py-2 px-3 text-sm text-gray-800">Completing 3x5 Legendary Codex</td>
+                                                    <td class="py-2 px-3 text-sm text-gray-800"><strong class="font-semibold">+2%</strong> per NFT</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="py-2 px-3 text-sm text-gray-800"><strong class="font-semibold">Cosmic Boost</strong></td>
+                                                    <td class="py-2 px-3 text-sm text-gray-800">Completing 3x6 Legendary Codex</td>
+                                                    <td class="py-2 px-3 text-sm text-gray-800"><strong class="font-semibold">+3%</strong> per NFT</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
                             </li>
                         </ul>
                     </div>
